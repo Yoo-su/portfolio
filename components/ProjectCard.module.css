@@ -1,0 +1,66 @@
+.projectCard{
+    display:flex;
+    flex-direction:column;
+    align-items:center;;
+    justify-content:center;
+    background:#FAFDEC;
+    padding:10px 10px 5px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+	-moz-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+	box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+    cursor:pointer;
+    flex-basis:24rem;
+    transition: all .20s linear;
+    position:relative;
+}
+
+.projectCard:hover{
+    transform:scale(1.01);
+    -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
+	-moz-box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
+}
+
+.projectTitle{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+}
+
+.year{
+    position:relative;
+    letter-spacing:1px;
+    color:white;
+    padding:0.3rem 0.5rem;
+    top:0;
+    background:#696969;
+    border-radius:0 0 0.25rem 0.25rem;
+}
+
+.representImage{
+    width:100%;
+    object-fit:cover;
+}
+
+.projectName{
+    font-family: 'IBM Plex Sans KR', sans-serif;
+}
+
+.stackInfo{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.stk{
+    color:#333333;
+    margin:0.1rem 0.2rem;
+    padding:0.2rem 0.3rem;
+    border-radius:0.5rem;
+    border:2px solid #333333;
+    font-weight:bold;
+}

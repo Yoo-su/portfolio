@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+#topNavbar, #navbar{
+    display:flex;
+    flex-direction:row;
+    position:fixed;
+    top:0;
+    z-index:50;
+    color:#2B2B2B;
+    justify-content:space-between;
+    width:80%;
+    font-family: 'Noto Sans KR', sans-serif;
+    height:4rem;
+}
+
+#topNavbar{
+    background:transparent;
+    box-shadow:0 1px hsl(0deg 0% 80% / 80%);
+}
+
+#topNavbar > #nav_left, #topNavbar > #nav_right{
+    opacity:0.7;
+}
+
+#navbar{
+    width:100%;
+    background:#ffffff;
+    box-shadow:0 1px hsl(0deg 0% 80% / 80%);
+}
+
+#navbar > #nav_left{
+    padding-left:9.5rem;
+}
+#navbar > #nav_right{
+    padding-right:9.5rem;
+}
+
+#nav_left{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    font-size:32px;
+}
+
+#nav_left >b{
+    cursor:pointer;
+}
+
+#nav_right{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    font-size:24px;
+}
+
+#nav_right label{
+    margin-left:2rem;
+    cursor:pointer;
+    text-decoration: none;
+}
+
+#nav_right label::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 4px;
+    background: #607D3B;
+    transition: width .3s;
+}
+
+#nav_right label:hover::after {
+    width: 100%;
+    //transition: width .3s;
+}
+
+
+@media all and (min-width:0px) and (max-width:980px){
+    #topNavbar, #navbar{
+        width:100%;
+        height:2.5rem;
+        justify-content:flex-start;
+    }
+    #nav_left, #navbar > #nav_left{
+        padding-left:0.5rem;
+        font-size:1.2rem;
+    }
+    #nav_right{
+        display:none;
+    }
+}

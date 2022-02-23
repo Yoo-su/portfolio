@@ -1,0 +1,50 @@
+{
+    "restaurantProject":{
+        "pageInfo":[
+            {
+                "url":"/images/restaurant_project/mainPage2.png",
+                "desc":"2020년 학부 전공인 SW공학개론에서 진행했던 프로젝트입니다. 실시간 주문 및 쿠킹알림, 판매 및 매상집계 자동화 웹 서비스입니다."
+            },
+            {
+                "url":"/images/restaurant_project/orderPage.png",
+                "desc":"주문 페이지입니다. 매장 점원은 테이블 버튼과 테이크아웃 버튼을 통해 주문을 접수할 수 있습니다."
+            },
+            {
+                "url":"/images/restaurant_project/orderModal.png",
+                "desc":"주문 페이지에서 테이블 버튼을 클릭한 후 주문 모달이 활성화된 모습입니다." 
+            },
+            {
+                "url":"/images/restaurant_project/cookingPage.png",
+                "desc":"쿠킹 페이지입니다. 매장 셰프는 접수된 주문을 확인 후, 해당 주문의 요리가 완료되면 버튼을 눌러 알림을 전송할 수 있습니다."
+            },
+            {
+                "url":"/images/restaurant_project/salesPage.png",
+                "desc":"판매내역 조회 페이지입니다. 매장 관리자는 매장의 판매 내역을 확인할 수 있고, 평균 주문 준비시간과 평균 고객 매장이용 시간을 분석할 수 있습니다."
+            },
+            {
+                "url":"/images/restaurant_project/accountPage.png",
+                "desc":"회계정보 조회 페이지입니다. 일별 매장 회계정보를 조회할 수 있습니다."   
+            },
+            {
+                "url":"/images/restaurant_project/accountGraph.png",
+                "desc":"매장 회계정보를 그래프로 시각화된 형태로 확인할 수 있습니다."
+            },
+            {
+                "url":"/images/restaurant_project/employeeManagePage.png",
+                "desc":"직원 관리 페이지입니다."
+            },
+            {
+                "url":"/images/restaurant_project/employeeDetailPage.png",
+                "desc":"직원 상세정보 페이지입니다. 직원의 활동내역과 지불할 임금액을 확인할 수 있습니다."
+            },
+            {
+                "url":"/images/restaurant_project/stockManagePage.png",
+                "desc":"매장에서 판매하는 메뉴의 재고 조회 및 관리 페이지입니다."
+            }
+        
+        ],
+        "year":"2020",
+        "name":"레스토랑 자동화 프로젝트",
+        "stack":["React", "Redux", "Express", "MySQL"]
+    }
+}

@@ -1,0 +1,40 @@
+#projects{
+    display:flex;
+    flex-direction:column;
+    width:100%;
+    justify-content:center;
+    align-items:center;
+    padding:6rem 4rem;
+    background:#EFE1BD;
+    color:#000;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+#title{
+    display:flex;
+    letter-spacing:3px;
+    margin-bottom:2rem;
+    justify-content:center;
+    align-items:center;
+}
+
+.titleIcon{
+    color:#A17857;
+    opacity:0.6;
+    width:3.5rem;
+    height:3.5rem;
+    cursor:pointer;
+}
+
+.titleIcon:hover{
+    opacity:1;
+}
+
+#content{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:center;
+    width:80%;
+}
