@@ -47,7 +47,7 @@
     font-family: 'IBM Plex Sans KR', sans-serif;
 }
 
-.infoBox{
+.infoBox, .infoBoxHidden{
     display:flex;
     flex-direction:row;
     justify-content:space-between;
@@ -57,7 +57,14 @@
     padding:1rem 2rem;
     margin:0.5rem 2rem;
     background:#F9F9F3;
+}
+
+.infoBox{
     animation:appear 2s;
+}
+
+.infoBoxHidden{
+    visible:hidden;
 }
 
 .infoBox_visible{

@@ -47,15 +47,15 @@ export default function BasicInfo() {
   return (
     <div id={styles.basicInfo}>
       <div id={styles.title}>
-        <h1 ref={ref}>
+        <h1>
           <ImLeaf className={styles.titleIcon}/>
           <span onClick={()=>{console.log(inView)}}>ABOUT ME</span>
         </h1>
       </div>
-      <div id={styles.content}>
+      <div id={styles.content} ref={ref}>
         <div className={styles.boxesContainer}>
           {data.map(d=>(
-            <div key={d.key} className={inView===true?styles.infoBox:""}>
+            <div key={d.key} className={inView===true?styles.infoBox:styles.InfoBoxHidden}>
               {d.icon()}
               <div className={styles.boxContent}>
                 <b>{d.key}</b>
