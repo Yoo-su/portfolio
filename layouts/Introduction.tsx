@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "./introduction.module.css";
+import styles from "./Introduction.module.css";
 import memoticon from "../public/images/memoticon.jpg"
 import { BsFillArrowDownCircleFill } from "react-icons/bs";
 export default function Introduction() {
