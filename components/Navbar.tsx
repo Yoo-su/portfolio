@@ -24,10 +24,10 @@ export default function Navbar() {
         </div>
         <div id={styles.nav_right}>
           <label onClick={()=>{
-            window.scroll({top:(document.getElementById("BasicInfo_basicInfo__QOVle")?.offsetTop-60),left:0,behavior:'smooth'});
+            //window.scroll({top:(document.getElementById("BasicInfo_basicInfo__QOVle")?.offsetTop-60),left:0,behavior:'smooth'});
           }}>About Me</label>
           <label onClick={()=>{
-            window.scroll({top:(document.getElementById("MySkills_mySkills__3Bbdb")?.offsetTop-60),left:0, behavior:'smooth'});
+            //window.scroll({top:(document.getElementById("MySkills_mySkills__3Bbdb")?.offsetTop-60),left:0, behavior:'smooth'});
           }}>Skills</label>
           <label>Projects</label>
         </div>
