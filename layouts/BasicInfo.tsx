@@ -45,17 +45,17 @@ export default function BasicInfo() {
 
   },[])
   return (
-    <div id={styles.basicInfo}>
+    <div id={styles.basicInfo} ref={ref}>
       <div id={styles.title}>
         <h1>
           <ImLeaf className={styles.titleIcon}/>
           <span onClick={()=>{console.log(inView)}}>ABOUT ME</span>
         </h1>
       </div>
-      <div id={styles.content} ref={ref}>
+      <div id={styles.content}>
         <div className={styles.boxesContainer}>
           {data.map(d=>(
-            <div key={d.key} className={inView===true?styles.infoBox:styles.InfoBoxHidden}>
+            <div key={d.key} className={inView===true?styles.infoBox:""}>
               {d.icon()}
               <div className={styles.boxContent}>
                 <b>{d.key}</b>
