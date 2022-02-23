@@ -20,7 +20,7 @@ export default function Navbar() {
         <div id={styles.nav_left}>
           <b onClick={()=>{
             document.getElementById('introduction_introduction__MxUUU')?.scrollIntoView({ behavior: 'smooth', block: 'center' })
-          }}>YSH's portfolio</b>
+          }}>YSH portfolio</b>
         </div>
         <div id={styles.nav_right}>
           <label onClick={()=>{
