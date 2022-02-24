@@ -38,16 +38,21 @@
     margin-top:2rem;
 }
 
-.hide{
-    display:none;
-}
-
 #frontend, #backend, #languages{
     display:flex;
     flex-direction:column;
     flex-wrap:wrap;   
     justify-content:center;
     align-items:center;
+}
+
+.hide{
+    display:flex;
+    flex-direction:column;
+    flex-wrap:wrap;   
+    justify-content:center;
+    align-items:center;
+    visibility:hidden;
 }
 
 #frontend{

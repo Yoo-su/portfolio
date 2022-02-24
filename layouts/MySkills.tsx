@@ -65,15 +65,15 @@ export default function MySkills() {
     threshold:0,
   })
   return (
-    <div id={styles.mySkills}>
+    <div id={styles.mySkills} ref={ref}>
       <div id={styles.title}>
         <FiTool className={styles.titleIcon} />
         <h1>
           <span>MY SKILLS</span>
         </h1>
       </div>
-      <div id={styles.content} ref={ref}>
-        <div id={inView===true?styles.frontend:""}>
+      <div id={styles.content}>
+        <div id={inView===true?styles.frontend:styles.hide}>
           <div className={styles.contentTitle}>
             <label className={styles.domain}>Frontend</label>
           </div>
@@ -87,7 +87,7 @@ export default function MySkills() {
           </div>
         </div>
 
-        <div id={inView===true?styles.backend:""}>
+        <div id={inView===true?styles.backend:styles.hide}>
           <div className={styles.contentTitle}>
             <label className={styles.domain}>Backend & DB</label>
           </div>
@@ -101,7 +101,7 @@ export default function MySkills() {
           </div>
         </div>
 
-        <div id={inView===true?styles.languages:""}>
+        <div id={inView===true?styles.languages:styles.hide}>
           <div className={styles.contentTitle}>
             <label className={styles.domain}>Languages</label>
           </div>

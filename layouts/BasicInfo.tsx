@@ -41,9 +41,9 @@ export default function BasicInfo() {
   ]
   
   return (
-    <div id={styles.basicInfo}>
+    <div id={styles.basicInfo} ref={ref}>
       <div id={styles.title}>
-        <h1 ref={ref}>
+        <h1>
           <ImLeaf className={styles.titleIcon}/>
           <span onClick={()=>{console.log(inView)}}>ABOUT ME</span>
         </h1>
