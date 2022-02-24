@@ -71,7 +71,9 @@
     width:100%;
     padding:2rem 1rem;
 }
-
+.sliderContent img{
+    object-fit:contain;
+}
 
 .projectDesc{
     display:flex;
@@ -87,7 +89,5 @@
     .sliderContent{
         padding:1rem 2rem;
     }
-    .sliderContent img{
-        object-fit:contain;
-    }
+    
 }

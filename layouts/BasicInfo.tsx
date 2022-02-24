@@ -1,5 +1,4 @@
 import styles from "./BasicInfo.module.css";
-import {useState, useEffect, useRef, MutableRefObject} from 'react';
 import { useInView } from "react-intersection-observer";
 import { HiUser,HiCalendar,HiLocationMarker,HiPhone,HiMail,HiPencil } from "react-icons/hi";
 import { ImLeaf } from "react-icons/im";
@@ -40,22 +39,19 @@ export default function BasicInfo() {
       value:"동국대학교(컴퓨터공학)"
     }
   ]
-  useEffect(()=>{
-    console.log(inView);
-
-  },[])
+  
   return (
-    <div id={styles.basicInfo} ref={ref}>
+    <div id={styles.basicInfo}>
       <div id={styles.title}>
-        <h1>
+        <h1 ref={ref}>
           <ImLeaf className={styles.titleIcon}/>
           <span onClick={()=>{console.log(inView)}}>ABOUT ME</span>
         </h1>
       </div>
       <div id={styles.content}>
-        <div className={styles.boxesContainer}>
+        <div className={inView===true?styles.boxesContainer:styles.hiddenContainer}>
           {data.map(d=>(
-            <div key={d.key} className={inView===true?styles.infoBox:""}>
+            <div key={d.key} className={styles.infoBox}>
               {d.icon()}
               <div className={styles.boxContent}>
                 <b>{d.key}</b>

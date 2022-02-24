@@ -46,6 +46,8 @@
 
 .projectName{
     font-family: 'IBM Plex Sans KR', sans-serif;
+    font-size:1.2rem;
+    margin:0.5rem 0;
 }
 
 .stackInfo{
@@ -57,10 +59,18 @@
 }
 
 .stk{
-    color:#333333;
+    background:#2DAADB;
+    color:#fff;
     margin:0.1rem 0.2rem;
     padding:0.2rem 0.3rem;
     border-radius:0.5rem;
-    border:2px solid #333333;
+    border:none;
     font-weight:bold;
+}
+
+
+@media all and (min-width:0px) and (max-width:720px){
+    .projectCard{
+        margin-bottom:1rem;
+    }
 }

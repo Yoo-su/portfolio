@@ -46,5 +46,24 @@
         "year":"2020",
         "name":"레스토랑 자동화 프로젝트",
         "stack":["React", "Redux", "Express", "MySQL"]
+    },
+    "welfare_project":{
+        "pageInfo":[
+            {
+                "url":"/images/welfare_project/mainPage.png",
+                "desc":"2021년 학부 졸업작품으로 진행한 프로젝트입니다. "
+            }
+            ,{
+                "url":"/images/welfare_project/result.png",
+                "desc":"복지정보 탐색 결과"
+            },
+            {
+                "url":"/images/welfare_project/mobile.png",
+                "desc":"모바일 화면"
+            }
+        ],
+        "year":"2021",
+        "name":"모두의 복지 챗봇 프로젝트",
+        "stack":["React", "Redux", "Tailwind CSS", "Django", "DialogFlow"]
     }
 }

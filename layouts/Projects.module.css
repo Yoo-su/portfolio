@@ -33,10 +33,25 @@
     display:flex;
     flex-direction:row;
     flex-wrap:wrap;
-    justify-content:center;
+    justify-content:space-around;
     align-items:center;
     margin-top:2rem;
     width:80%;
+    animation:fadein 2s;
+}
+
+#hiddenContent{
+    display:none;
+}
+@keyframes fadein{
+    from{
+        opacity:0;
+        transform:translateY(15%);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
 }
 
 @media all and (min-width:0px) and (max-width:720px){
