@@ -3,6 +3,7 @@ import { useInView } from "react-intersection-observer";
 import { HiUser,HiCalendar,HiLocationMarker,HiPhone,HiMail,HiPencil } from "react-icons/hi";
 import { ImLeaf } from "react-icons/im";
 
+//기본정보 레이아웃
 export default function BasicInfo() {
   const {ref, inView, entry}=useInView({
     threshold:0,

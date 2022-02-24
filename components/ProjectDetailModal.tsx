@@ -18,10 +18,11 @@ interface propsType {
     onHide: any
 }
 
+//프로젝트 상세정보 모달 컴포넌트
 export default function ProjectDetailModal({ show, pageInfo, year, name, onHide }: propsType) {
     return (
         <div onClick={e => e.stopPropagation()}>
-        <Modal className={styles.projectDetailModal} show={show} onHide={onHide} size="lg">
+        <Modal className={styles.projectDetailModal} show={show} onHide={onHide} size="lg" centered>
             <span className={styles.modalHeader}>
                 <AiOutlineClose className={styles.closeIcon} onClick={onHide} />
             </span>

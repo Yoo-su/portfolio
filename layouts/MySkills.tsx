@@ -60,6 +60,7 @@ const languageSkills=[
   },
 ]
 
+//나의 스킬정보 레이아웃
 export default function MySkills() {
   const {ref, inView, entry}=useInView({
     threshold:0,

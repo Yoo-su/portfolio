@@ -40,14 +40,13 @@
     margin-top:2rem;
     height:100%;
     width:80%;
-    animation:fadein 2s;
+    animation:fadein 3.5s;
 }
 
 #hiddenContent{
     display:flex;
     flex-direction:row;
     flex-wrap:wrap;
-    justify-content:space-around;
     align-items:center;
     margin-top:2rem;
     height:100%;
@@ -57,7 +56,7 @@
 @keyframes fadein{
     from{
         opacity:0;
-        transform:translateY(15%);
+        transform:translateY(10%);
     }
     to{
         opacity:1;
@@ -71,5 +70,6 @@
     }
     #content{
         margin-top:0.5rem;
+        justify-content:center;
     }
 }

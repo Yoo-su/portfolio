@@ -14,6 +14,7 @@ interface PropsType{
   stack:string[],
 }
 
+//프로젝트 카드 컴포넌트
 export default function ProjectCard({pageInfo,year,name,stack}:PropsType) {
   const [modalShow,setModalShow]=useState(false);
 

@@ -2,6 +2,8 @@ import Image from "next/image";
 import styles from "./Introduction.module.css";
 import memoticon from "../public/images/memoticon.jpg"
 import { BsFillArrowDownCircleFill } from "react-icons/bs";
+
+//첫 소개란 레이아웃
 export default function Introduction() {
   return (
     <div id={styles.introduction}>

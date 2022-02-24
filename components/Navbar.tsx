@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import styles from "./Navbar.module.css";
 
+//네이게이션 바 컴포넌트
 export default function Navbar() {
   const [pos,setPos]=useState("top");
   

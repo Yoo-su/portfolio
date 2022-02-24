@@ -49,15 +49,16 @@
     justify-content:center;
     align-items:center;
     height:100%;
+    overflow:hidden;
 }
 #frontend{
-    animation:slide 1s;
+    animation:slide 2.5s;
 }
 #backend{
-    animation:slide 2s;
+    animation:slide 3.5s;
 }
 #languages{
-    animation:slide 3s;
+    animation:slide 4.5s;
 }
 #hide{
     display:flex;
@@ -65,7 +66,6 @@
     flex-wrap:wrap;   
     justify-content:center;
     align-items:center;
-    height:100%;
     visibility:hidden;
 }
 
