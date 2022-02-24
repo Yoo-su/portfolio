@@ -18,7 +18,7 @@ export default function Projects() {
                     <span>Projects</span>
                 </h1>
             </div>
-            <div id={styles.content}>
+            <div id={inView===true?styles.content:styles.hiddenContent}>
                 <ProjectCard pageInfo={data.pageInfo} year={data.year} name={data.name} stack={data.stack} />
                 <ProjectCard pageInfo={data2.pageInfo} year={data2.year} name={data2.name} stack={data2.stack} />
             </div>
