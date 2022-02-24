@@ -4,6 +4,7 @@
     width:100%;
     justify-content:center;
     align-items:center;
+    overflow:hidden;
     padding:6rem 4rem;
     background:#EFE1BD;
     color:#000;
