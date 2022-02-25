@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Image from 'next/image'
+import { useRef } from 'react';
 import Introduction from '../layouts/Introduction';
 import BasicInfo from '../layouts/BasicInfo';
 import Navbar from '../components/Navbar';
@@ -18,7 +18,7 @@ export default function Home() {
 
       <main id={styles.main}> 
           <Navbar />
-          <Introduction />
+          <Introduction/>
           <BasicInfo />
           <MySkills />
           <Projects />

@@ -97,6 +97,10 @@
     width:1.5rem;
     height:1.5rem;
 }
+.githubIcon:hover, .browserIcon:hover{
+    transform:scale(1.1);
+    transition:transform 0.2s linear;
+}
 
 @media all and (min-width:0px) and (max-width:720px){
     .sliderContent{
