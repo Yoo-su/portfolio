@@ -12,6 +12,7 @@
     cursor:pointer;
     flex-basis:24rem;
     transition: all .20s linear;
+    margin-bottom:2.5rem;
     position:relative;
 }
 

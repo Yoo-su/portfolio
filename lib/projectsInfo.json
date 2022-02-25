@@ -45,13 +45,15 @@
         ],
         "year":"2020",
         "name":"레스토랑 자동화 프로젝트",
-        "stack":["React", "Redux", "Express", "MySQL"]
+        "stack":["React", "Redux", "Express", "MySQL"],
+        "github":"https://github.com/Yoo-su/2020-2-SE_Project",
+        "demo":"https://yoo-su.github.io/every-gp/#/"
     },
     "welfare_project":{
         "pageInfo":[
             {
                 "url":"/images/welfare_project/mainPage.png",
-                "desc":"2021년 학부 졸업작품으로 진행한 프로젝트입니다. "
+                "desc":"2021년 학부 졸업작품으로 진행한 프로젝트입니다. 누구나 쉽고 빠르게 본인이 거주하는 지역에서 받을 수 있는 복지정보를 대화를 통해 확인할 수 있는 복지 챗봇 웹 서비스입니다.  "
             }
             ,{
                 "url":"/images/welfare_project/result.png",
@@ -64,6 +66,25 @@
         ],
         "year":"2021",
         "name":"모두의 복지 챗봇 프로젝트",
-        "stack":["React", "Redux", "Tailwind CSS", "Django", "DialogFlow"]
+        "stack":["React", "Redux", "Tailwind CSS", "Django", "DialogFlow"],
+        "github":"https://github.com/CSID-DGU/2021-1-CECD2-YOOSEONGHO-3",
+        "demo":"https://yoo-su.github.io/every-welfare/#/"
+    },
+    "portfolio":{
+        "pageInfo":[
+            {
+                "url":"/images/portfolio/titleImage.png",
+                "desc":"현재 보고계신 포트폴리오 웹입니다 :)"
+            },
+            {
+                "url":"/images/portfolio/projects.png",
+                "desc":"프로젝트 소개 화면"
+            }
+        ],
+        "year":"2022",
+        "name":"포트폴리오",
+        "stack":["React", "Next.js"],
+        "github":"https://github.com/Yoo-su/portfolio",
+        "demo":"portfolio-git-main-yoo-su.vercel.app"
     }
 }

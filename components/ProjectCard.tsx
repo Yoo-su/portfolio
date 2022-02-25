@@ -12,10 +12,12 @@ interface PropsType{
   year:string,
   name:string,
   stack:string[],
+  github:string,
+  demo:string,
 }
 
 //프로젝트 카드 컴포넌트
-export default function ProjectCard({pageInfo,year,name,stack}:PropsType) {
+export default function ProjectCard({pageInfo,year,name,stack,github,demo}:PropsType) {
   const [modalShow,setModalShow]=useState(false);
 
   const hideModal=()=>{
@@ -47,7 +49,7 @@ export default function ProjectCard({pageInfo,year,name,stack}:PropsType) {
         ))}
       </div>
 
-      <ProjectDetailModal show={modalShow} onHide={hideModal} pageInfo={pageInfo} year={year} name={name} />
+      <ProjectDetailModal show={modalShow} onHide={hideModal} pageInfo={pageInfo} year={year} name={name} github={github} demo={demo} />
     </div>
   )
 }

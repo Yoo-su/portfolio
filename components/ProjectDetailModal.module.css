@@ -82,7 +82,20 @@
     justify-content:center;
     align-items:center;
     margin:2rem 1rem;
+}
 
+
+.bottomIcons{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.githubIcon, .browserIcon{
+    cursor:pointer;
+    margin:0.5rem 1rem;
+    width:1.5rem;
+    height:1.5rem;
 }
 
 @media all and (min-width:0px) and (max-width:720px){

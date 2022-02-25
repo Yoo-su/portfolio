@@ -74,7 +74,7 @@ export default function MySkills() {
         </h1>
       </div>
       <div id={styles.content} ref={ref}>
-        <div id={inView===true?styles.frontend:styles.hide}>
+        <div id={inView===true?styles.frontend:styles.hide1}>
           <div className={styles.contentTitle}>
             <label className={styles.domain}>Frontend</label>
           </div>
@@ -88,7 +88,7 @@ export default function MySkills() {
           </div>
         </div>
 
-        <div id={inView===true?styles.backend:styles.hide}>
+        <div id={inView===true?styles.backend:styles.hide2}>
           <div className={styles.contentTitle}>
             <label className={styles.domain}>Backend & DB</label>
           </div>
@@ -102,7 +102,7 @@ export default function MySkills() {
           </div>
         </div>
 
-        <div id={inView===true?styles.languages:styles.hide}>
+        <div id={inView===true?styles.languages:styles.hide3}>
           <div className={styles.contentTitle}>
             <label className={styles.domain}>Languages</label>
           </div>

@@ -18,13 +18,11 @@ export default function Introduction() {
         <h1>안녕하세요, 유수현입니다</h1>
         <div className={styles.desc_2}>
           <p>
-            뭔가를&nbsp;
-            <mark>만드는 것</mark>
-            과
-            새로운 것을&nbsp;
-            <mark>배우는 것</mark>
-            을 좋아하는&nbsp;
-            <mark>프론트엔드 개발자</mark>&nbsp; 입니다
+            <mark>도전</mark>
+            을 두려워하지 않고&nbsp;
+            <mark>발전</mark>
+            하기 위해 꾸준히 노력하는&nbsp;
+            <mark>주니어 개발자</mark>입니다
           </p>
           <BsFillArrowDownCircleFill className={styles.icon} />
         </div>

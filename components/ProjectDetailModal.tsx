@@ -3,6 +3,8 @@ import 'react-awesome-slider/dist/styles.css';
 import "react-awesome-slider/dist/custom-animations/scale-out-animation.css";
 import { Modal } from "react-bootstrap"
 import { AiOutlineClose } from 'react-icons/ai';
+import { GoBrowser } from "react-icons/go";
+import { SiGithub} from 'react-icons/si';
 import styles from "./ProjectDetailModal.module.css";
 
 type pageInfoType={
@@ -15,11 +17,13 @@ interface propsType {
     pageInfo: pageInfoType[],
     year: string,
     name: string,
+    github:string,
+    demo:string,
     onHide: any
 }
 
 //프로젝트 상세정보 모달 컴포넌트
-export default function ProjectDetailModal({ show, pageInfo, year, name, onHide }: propsType) {
+export default function ProjectDetailModal({ show, pageInfo, year, name, github, demo, onHide }: propsType) {
     return (
         <div onClick={e => e.stopPropagation()}>
         <Modal className={styles.projectDetailModal} show={show} onHide={onHide} size="lg" centered>
@@ -45,6 +49,14 @@ export default function ProjectDetailModal({ show, pageInfo, year, name, onHide 
             <div className={styles.projectDesc}>
                 <b>{name}</b>
                 <label>{pageInfo[0].desc}</label>
+                    <div className={styles.bottomIcons}>
+                        <SiGithub className={styles.githubIcon} onClick={() => {
+                            window.open(github);
+                        }} />
+                        <GoBrowser className={styles.browserIcon}  onClick={() => {
+                            window.open(demo);
+                        }} />
+                    </div>
             </div>
         </Modal>
         </div>
