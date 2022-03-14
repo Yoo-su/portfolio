@@ -5,7 +5,7 @@ import { Modal } from "react-bootstrap"
 import { AiOutlineClose } from 'react-icons/ai';
 import { GoBrowser } from "react-icons/go";
 import { SiGithub} from 'react-icons/si';
-import styles from "./ProjectDetailModal.module.css";
+import { Wrapper, ModalHeader, SliderContent, WindowTab, ProjectDesc, BottomIcons} from './styles';
 
 type pageInfoType={
     url:string,
@@ -25,40 +25,40 @@ interface propsType {
 //프로젝트 상세정보 모달 컴포넌트
 export default function ProjectDetailModal({ show, pageInfo, year, name, github, demo, onHide }: propsType) {
     return (
-        <div onClick={e => e.stopPropagation()}>
-        <Modal className={styles.projectDetailModal} show={show} onHide={onHide} size="lg" centered>
-            <span className={styles.modalHeader}>
-                <AiOutlineClose className={styles.closeIcon} onClick={onHide} />
-            </span>
+        <Wrapper onClick={e => e.stopPropagation()}>
+        <Modal className="ProjectDetailModal" show={show} onHide={onHide} size="lg" centered>
+            <ModalHeader>
+                <AiOutlineClose className="CloseIcon" onClick={onHide} />
+            </ModalHeader>
 
-            <div className={styles.sliderContent}>
-                <div className={styles.topTab}>
-                    <div className={styles.redCircle}></div>
-                    <div className={styles.yellowCircle}></div>
-                    <div className={styles.greenCircle}></div>
-                </div>
+            <SliderContent>
+                <WindowTab>
+                    <div className="redCircle"></div>
+                    <div className="yellowCircle"></div>
+                    <div className="greenCircle"></div>
+                </WindowTab>
                 <AwesomeSlider
-                    className={styles.aws_btn}
+                    className="aws_btn"
                     animation="scaleOutAnimation"
                 >
                     {pageInfo.map(info => (
                         <div data-src={info.url} key={info.url} />
                     ))}
                 </AwesomeSlider>
-            </div>
-            <div className={styles.projectDesc}>
-                <b>{name}</b>
-                <label>{pageInfo[0].desc}</label>
-                    <div className={styles.bottomIcons}>
-                        <SiGithub className={styles.githubIcon} onClick={() => {
+            </SliderContent>
+                <ProjectDesc>
+                    <b>{name}</b>
+                    <label>{pageInfo[0].desc}</label>
+                    <BottomIcons>
+                        <SiGithub className="githubIcon" onClick={() => {
                             window.open(github);
                         }} />
-                        <GoBrowser className={styles.browserIcon}  onClick={() => {
+                        <GoBrowser className="browserIcon" onClick={() => {
                             window.open(demo);
                         }} />
-                    </div>
-            </div>
+                    </BottomIcons>
+                </ProjectDesc>
         </Modal>
-        </div>
+        </Wrapper>
     )
 }

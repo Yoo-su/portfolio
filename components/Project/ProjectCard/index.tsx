@@ -1,6 +1,6 @@
-import styles from "./ProjectCard.module.css";
-import ProjectDetailModal from "./ProjectDetailModal";
+import ProjectDetailModal from '../ProjectDetailModal';
 import {useState} from 'react';
+import { Wrapper } from "./styles";
 
 type pageInfoType={
   url:string,
@@ -28,28 +28,28 @@ export default function ProjectCard({pageInfo,year,name,stack,github,demo}:Props
   }
 
   return (
-    <div className={styles.projectCard} onClick={showModal}>
+    <Wrapper onClick={showModal}>
       {/* 프로젝트 대표 이미지 */}
-      <div className={styles.projectTitle}>
-        <img src={pageInfo[0].url} className={styles.representImage}/>
-        <label className={styles.year}>{year}</label>
+      <div className="ProjectTitle">
+        <img src={pageInfo[0].url} className="RepresentImage" />
+        <label className="Year">{year}</label>
       </div>
 
       {/* 프로젝트 명 */}
-      <div className={styles.projectName}>
+      <div className="ProjectName">
         <b>{name}</b>
       </div>
 
       {/* 기술스택 */}
-      <div className={styles.stackInfo}>
+      <div className="StackInfo">
         {stack.map(stk=>(
-          <div className={styles.stk} key={stk}>
+          <div className="Stk" key={stk}>
             <label>{stk}</label>
           </div>
         ))}
       </div>
 
       <ProjectDetailModal show={modalShow} onHide={hideModal} pageInfo={pageInfo} year={year} name={name} github={github} demo={demo} />
-    </div>
+    </Wrapper>
   )
 }
