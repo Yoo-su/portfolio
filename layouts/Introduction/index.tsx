@@ -28,11 +28,7 @@ export default function Introduction() {
           </p>
           
           <BsFillArrowDownCircleFill className="DownIcon" onClick={()=>{
-            let navbar=document.getElementById("Navbar_topNavbar__iNiS9");
-            if (!navbar){
-              navbar=document.getElementById("Navbar_navbar__wU2Rq");
-            }
-            window.scrollTo({left:0, top:document.getElementById("BasicInfo_basicInfo__QOVle")?.offsetTop-navbar.clientHeight, behavior:'smooth'});
+            window.scrollTo({left:0, top:document.getElementById("Basicinfo_Layout")?.offsetTop-document.getElementById("Navbar")?.clientHeight,behavior:'smooth'});
           }}/>
         </Description2>
       </Description>
