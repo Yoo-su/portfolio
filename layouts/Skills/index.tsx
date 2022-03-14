@@ -1,4 +1,3 @@
-import styles from "./MySkills.module.css";
 import {FiTool} from "react-icons/fi";
 import {SiTypescript, SiExpress, SiJavascript, SiReact, SiHtml5, SiCss3, SiCplusplus, SiPython, SiTailwindcss, SiRedux, SiMysql, SiC} from "react-icons/si"
 import { useInView } from "react-intersection-observer";

@@ -1,5 +1,4 @@
 import { useInView } from "react-intersection-observer"
-import styles from "./Projects.module.css";
 import {IoCodeWorkingSharp} from "react-icons/io5";
 import ProjectCard from "../../components/Project/ProjectCard";
 import { Wrapper, Title } from "../commonStyles";
