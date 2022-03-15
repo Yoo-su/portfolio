@@ -49,6 +49,7 @@ export const Wrapper=styled.div`
     & .ProjectName{
         font-family: 'IBM Plex Sans KR', sans-serif;
         font-size:1.2rem;
+        white-space:nowrap;
         margin:0.5rem 0;
     }
     & .StackInfo{

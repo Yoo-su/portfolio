@@ -1,14 +1,6 @@
 import styled from "styled-components";
 
 export const Wrapper=styled.div`
-    & .ProjectDetailModal{
-        display:flex;
-        flex-direction:column;
-        flex-wrap:wrap;
-        justify-content:center;
-        align-items:center;
-        font-family: 'IBM Plex Sans KR', sans-serif;
-    }
 `;
 
 export const ModalHeader=styled.div`
@@ -92,6 +84,7 @@ export const ProjectDesc=styled.div`
     justify-content:center;
     align-items:center;
     margin:2rem 1rem;
+    font-family: 'IBM Plex Sans KR', sans-serif;
 `;
 
 export const BottomIcons=styled.div`
