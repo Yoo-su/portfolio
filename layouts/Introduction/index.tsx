@@ -24,7 +24,7 @@ export default function Introduction() {
             <mark>발전</mark>
             하기 위해 꾸준히 노력하는
             열정 가득한 신입&nbsp;
-            <mark>웹 프론트엔드 개발자</mark>입니다
+            <mark>개발자</mark>입니다
           </p>
           
           <BsFillArrowDownCircleFill className="DownIcon" onClick={()=>{
