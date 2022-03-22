@@ -1,6 +1,25 @@
-import styled from "styled-components";
+import styled, {keyframes, css} from "styled-components";
 
-export const Wrapper=styled.div`
+interface Props{
+    inView:boolean
+}
+
+const fadein=keyframes`
+    from{
+        opacity:0;
+        transform:translateY(10%);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+`;
+
+const cssStyle=css`
+    animation:${fadein} 3s;
+`;
+
+export const Wrapper=styled.div<Props>`
     display:flex;
     flex-direction:column;
     align-items:center;
@@ -16,6 +35,8 @@ export const Wrapper=styled.div`
     transition: all .20s linear;
     margin-bottom:2.5rem;
     position:relative;
+    ${props=>props.inView===true && cssStyle};
+    visibility:${props=>props.inView===true?'visible':'hidden'};
 
     &:hover{
         transform:scale(1.01);

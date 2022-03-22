@@ -1,3 +1,4 @@
+import { useInView } from "react-intersection-observer"
 import ProjectDetailModal from '../ProjectDetailModal';
 import {useState} from 'react';
 import { Wrapper } from "./styles";
@@ -19,6 +20,9 @@ interface PropsType{
 //프로젝트 카드 컴포넌트
 export default function ProjectCard({pageInfo,year,name,stack,github,demo}:PropsType) {
   const [modalShow,setModalShow]=useState(false);
+  const {ref, inView, entry}=useInView({
+    threshold:0,
+  })
 
   const hideModal=()=>{
     setModalShow(false);
@@ -28,7 +32,7 @@ export default function ProjectCard({pageInfo,year,name,stack,github,demo}:Props
   }
 
   return (
-    <Wrapper onClick={showModal}>
+    <Wrapper onClick={showModal} ref={ref} inView={inView}>
       {/* 프로젝트 대표 이미지 */}
       <div className="ProjectTitle">
         <img src={pageInfo[0].url} className="RepresentImage" />
